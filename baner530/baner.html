@@ -1,0 +1,414 @@
+<html>
+	<head>
+	<style>
+    .visibility-page1{
+      animation: page1-animationFrames step-end 20s;
+      animation-iteration-count: infinite;
+    }
+    .visibility-page2{
+      animation: page2-animationFrames step-end 20s;
+      animation-iteration-count: infinite;
+    }
+    .visibility-page3{
+      animation: page3-animationFrames step-end 20s;
+      animation-iteration-count: infinite;
+    }
+    .visibility-page4{
+      animation: page4-animationFrames step-end 20s;
+      animation-iteration-count: infinite;
+    }
+
+    .p1_1-animation{
+      animation: p1_1-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+    .p1_2-animation{
+      animation: p1_2-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+
+    .p2_1-animation{
+      animation: p2_1-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+    .p2_2-animation{
+      animation: p2_2-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+    .p2_3-animation{
+      animation: p2_3-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+
+    .p3_1-animation{
+      animation: p3_1-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+    .p3_2-animation{
+      animation: p3_2-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+
+    .p4_1-animation{
+      animation: p4_1-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+    .p4_2-animation{
+      animation: p4_2-animationFrames linear 20s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+    }
+
+    @keyframes page1-animationFrames{
+      0% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+      }
+    }
+    @keyframes page2-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+    @keyframes page3-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      75% {
+        opacity: 0;
+      }
+    }
+    @keyframes page4-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes p1_1-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      2% {
+        opacity: 0;
+      }
+      4% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p1_2-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      12% {
+        opacity: 0;
+      }
+      14% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p2_1-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0;
+      }
+      27% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p2_2-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      30% {
+        opacity: 0;
+      }
+      32% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p2_3-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      35% {
+        opacity: 0;
+      }
+      37% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p3_1-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      52% {
+        opacity: 0;
+      }
+      54% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p3_2-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      62% {
+        opacity: 0;
+      }
+      64% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p4_1-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      77% {
+        opacity: 0;
+      }
+      79% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes p4_2-animationFrames{
+      0% {
+        opacity: 0;
+      }
+      87% {
+        opacity: 0;
+      }
+      89% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #banner {
+      width: 530px;
+      height: 100px;
+			background: #FFFFFF;
+      /* background: #FEFEFE;
+      background: -webkit-linear-gradient(left, #FEFEFE, #E3E3E3);
+      background: -o-linear-gradient(left, #FEFEFE, #E3E3E3);
+      background: -moz-linear-gradient(left, #FEFEFE, #E3E3E3);
+      background: linear-gradient(left, #FEFEFE, #E3E3E3); */
+      display:block;
+      position: absolute;
+    }
+
+
+    #page1 {
+      width:530px;
+      height:100px;
+      position: absolute;
+			background: url("baner-images/p1_bg.png");
+    }
+
+    #p1_1 {
+      width: 206px;
+      height: 64px;
+      position: absolute;
+      background: url("baner-images/p1_1.png");
+      top: 19px;
+      left: 21px;
+    }
+    #p1_2 {
+      width: 252px;
+      height: 69px;
+      position: absolute;
+      background: url("baner-images/p1_2.png");
+      top: 13px;
+      left: 249px;
+    }
+
+    #page2 {
+      width:530px;
+      height:100px;
+      position: absolute;
+    }
+
+    #chpl {
+      width: 23px;
+      height: 18px;
+      position: absolute;
+      background: url("baner-images/chpl.png");
+      top: 80px;
+      left: 502px;
+    }
+    #p2_1 {
+      width: 192px;
+      height: 43px;
+      position: absolute;
+      background: url("baner-images/p2_1.png");
+      top: 0px;
+      left: 154px;
+    }
+    #p2_2 {
+      width: 462px;
+      height: 56px;
+      position: absolute;
+      background: url("baner-images/p2_2.png");
+      top: 44px;
+      left: 15px;
+    }
+
+    #page3 {
+      width:530px;
+      height:100px;
+      position: absolute;
+    }
+    #p3_1 {
+      width: 192px;
+      height: 43px;
+      position: absolute;
+      background: url("baner-images/p3_1.png");
+      top: 0px;
+      left: 167px;
+    }
+    #p3_2 {
+      width: 504px;
+      height: 62px;
+      position: absolute;
+      background: url("baner-images/p3_2.png");
+			top: 38px;
+      left: 2px;
+    }
+
+    #page4 {
+      width:530px;
+      height:100px;
+      position: absolute;
+    }
+
+    #p4_1 {
+      width: 269px;
+      height: 79px;
+      position: absolute;
+      background: url("baner-images/p4_1.png");
+      top: 10px;
+      left: 2px;
+    }
+    #p4_2 {
+      width: 247px;
+      height: 85px;
+      position: absolute;
+      background: url("baner-images/p4_2.png");
+      top: 14px;
+      left: 277px;
+    }
+
+    #link {
+      width: 530px;
+      height: 100px;
+      position: absolute;
+      display: block;
+    }
+
+    #link_chpl {
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      display: block;
+      top: 80px;
+      left: 490px;
+    }
+	</style>
+	</head>
+	<body>
+    <div id="banner">
+
+      <div id="page1" class="visibility-page1">
+        <div id="p1_top"></div>
+        <div id="p1_bottom"></div>
+        <div id="p1_1" class="p1_1-animation"></div>
+        <div id="p1_2" class="p1_2-animation"></div>
+        <div id="chpl_white"></div>
+      </div>
+
+      <div id="page2" class="visibility-page2">
+        <div id="p2_1" class="p2_1-animation"></div>
+        <div id="p2_2" class="p2_2-animation"></div>
+        <div id="chpl"></div>
+      </div>
+
+      <div id="page3" class="visibility-page3">
+        <div id="p3_1" class="p3_1-animation"></div>
+        <div id="p3_2" class="p3_2-animation"></div>
+        <div id="chpl"></div>
+      </div>
+
+      <div id="page4" class="visibility-page4">
+        <div id="p4_1" class="p4_1-animation"></div>
+        <div id="p4_2" class="p4_2-animation"></div>
+        <div id="chpl"></div>
+      </div>
+
+
+			<a id="link" href="http://pharmaway.pl/app/Rimantin_ChPL.PDF"></a>
+
+      <a id="link_chpl" href="http://pharmaway.pl/app/Rimantin_ChPL.PDF"></a>
+    </div>
+	</body>
+
+</html>
